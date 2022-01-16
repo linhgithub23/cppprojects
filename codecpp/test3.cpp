@@ -9,10 +9,13 @@ int main(){
        cout<<array[i/2]<<" ";
    }
    cout<<endl;
-   for(int i = 1; i <= 20  ;i++){
-       cout<<array[i]<<" ";
-   }
+   for(int i = 21; i >= 1; i--){
+    if(array[i]>array[21]){
+        array[21] = array[i];
+    }
 
+   }
+    cout<<array[21];
 
     return 0;
 }
