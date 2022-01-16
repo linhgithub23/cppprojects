@@ -3,16 +3,16 @@
 using namespace std;
 
 int main(){
-    int s = 0, m;
-   int array[5] = {1,2,3,4,5};
-   for(int i = 0; i < 5; i++){
-        array[i]+=1;
-        s+=array[i];
+    int array[1000];
+   for(int i = 2; i <= 40; i+=2){
+       array[i/2] = pow(i,2);
+       cout<<array[i/2]<<" ";
    }
-    m = ceil(s/5);
-    cout<<m;
+   cout<<endl;
+   for(int i = 1; i <= 20  ;i++){
+       cout<<array[i]<<" ";
+   }
+
+
     return 0;
-
-
-
 }
