@@ -1,21 +1,15 @@
 #include<iostream>
-#include<cmath>
-using namespace std;
-
+template<typename T, typename U>
+U add(T a, U b)/*the function return the type of U*/
+{
+    return a + b;
+}
+{
+    return a + b;
+}
 int main(){
-    int array[1000];
-   for(int i = 2; i <= 40; i+=2){
-       array[i/2] = pow(i,2);
-       cout<<array[i/2]<<" ";
-   }
-   cout<<endl;
-   for(int i = 21; i >= 1; i--){
-    if(array[i]>array[21]){
-        array[21] = array[i];
-    }
-
-   }
-    cout<<array[21];
-
+    std::cout << add(1, 2) << std::endl;
+    std::cout << add(1.1, 2) << std::endl;
+  
     return 0;
 }
